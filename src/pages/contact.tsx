@@ -1,5 +1,9 @@
 import * as React from 'react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import * as faBrands from '@fortawesome/free-brands-svg-icons';
+import * as faIons from '@fortawesome/free-solid-svg-icons';
+
 import MyFooter from '../components/footer';
 
 
@@ -13,19 +17,33 @@ function Contact() {
                 <div>
                     <table>
                         <tr>
-                            <td>Email</td>
-                            <td>evan@zaplachi.com</td>
+                            <td>
+                                <FontAwesomeIcon icon={faIons.faMailBulk} />
+                                &nbsp;
+                                Email
+                            </td>
+                            <td>
+                                <a href="mailto:evan@zaplachi.com" target="__blank" className="externalLink">
+                                evan@zaplachi.com    
+                                </a>
+                            </td>
                         </tr>
                         <tr>
-                            <td>Github</td>
-                            <td>Lorem, ipsum.</td>
+                            <td>
+                                <FontAwesomeIcon icon={faBrands.faGithub} />
+                                &nbsp;
+                                Github
+                            </td>
+                            <td>
+                                <a href="https://github.com/Evan-Zaplachi" target="__blank" className="externalLink">https://github.com/Evan-Zaplachi</a>
+                            </td>
                         </tr>
                         <tr>
-                            <td>LinkedIn</td>
-                            <td>Lorem, ipsum.</td>
-                        </tr>
-                        <tr>
-                            <td>Snapchat</td>
+                            <td>
+                                <FontAwesomeIcon icon={faBrands.faLinkedin} />
+                                &nbsp;
+                                LinkedIn
+                                </td>
                             <td>Lorem, ipsum.</td>
                         </tr>
                     </table>

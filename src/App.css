@@ -73,3 +73,11 @@ th {
 body {
   background-color: #282c34;
 }
+
+.externalLink {
+  color: white;
+}
+
+.externalLink:active {
+  color: grey;
+}

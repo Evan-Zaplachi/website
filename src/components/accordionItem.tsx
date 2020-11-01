@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import * as faBrands from '@fortawesome/free-brands-svg-icons';
 import * as faIcons from '@fortawesome/free-solid-svg-icons';
 
 import '../styles/accordian.css'
