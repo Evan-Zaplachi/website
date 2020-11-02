@@ -1,10 +1,14 @@
 import * as React from 'react';
 
 import MyFooter from '../components/footer';
+import StickyNavbar from '../components/stickyNavbar';
 
 function AboutMe() {
     return(
         <article>
+            <header className="navbarStatic">
+               <StickyNavbar /> 
+            </header>
             <section>
                 <header>
                     <div className="scnd-header">

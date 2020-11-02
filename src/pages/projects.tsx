@@ -2,12 +2,16 @@ import * as React from 'react';
 
 import Accordion from '../components/accordionItem';
 import MyFooter from '../components/footer';
+import StickyNavbar from '../components/stickyNavbar';
 
 
 
 function Projects() {
     return(
         <article>
+            <header style={{ position: 'fixed', top: '0', left: '0', width: '100%' }} >
+               <StickyNavbar /> 
+            </header>
             <section>
                 <div className="scnd-header">
                     <h3>These are some of my projects:</h3>
@@ -18,7 +22,11 @@ function Projects() {
                     <div className="column">
                         <Accordion title="This Website" >
                             <br />
-                            <p>This website was codded by yours truely using React and Typscripts.</p>
+                            <p>
+                                This website was codded by yours truely using React and Typscript.
+                                I used create-react-app to provide some boilerplate and comiler.
+                                Finally I used bluehost for my website hosting.
+                                </p>
                             <br />
                             <a href="https://github.com/Evan-Zaplachi/website" target="__blank" >Source Code</a>
                         </Accordion>
@@ -52,7 +60,7 @@ function Projects() {
                     </div>
                 </div>
             </section>
-            <MyFooter text="Click To Expand" />
+            <MyFooter text="Click To Expand"/>
         </article>
     )
 }

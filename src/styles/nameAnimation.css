@@ -1,0 +1,117 @@
+.nameFirstCon {
+    animation-name: firstAn;
+    animation-duration: 4s;
+    animation-delay: 0.2s;
+    font-size: 50px;
+}
+
+.nameScndCon {
+    animation-name: scndAn;
+    animation-duration: 3.5s;
+    animation-delay: 0.4s;
+    font-size: 45px;
+}
+
+.nameThirdCon {
+    animation-name: thirdAn;
+    animation-duration: 3.7s;
+    animation-delay: 0.3s;
+    font-size: 47px;
+}
+
+.nameFourthCon {
+    animation-name: fourthAn;
+    animation-duration: 3.2s;
+    animation-delay: 0.2s;
+    font-size: 42px;
+}
+
+.nameFifthCon {
+    animation-name: fifthAn;
+    animation-duration: 3.6s;
+    animation-delay: 0.5s;
+    font-size: 46px;
+}
+
+
+
+.nameFirstCon:hover {
+    color: #2b486a;
+}
+
+.nameScndCon:hover {
+    color: #869ba0;
+}
+
+.nameThirdCon:hover {
+    color: #a39bb0;
+}
+
+
+.nameFourthCon:hover {
+    color: #d2bba2;
+}
+
+.nameFifthCon:hover {
+    color: #5a7702;
+}
+
+.nameCon {
+    text-align: center;
+}
+
+
+@keyframes firstAn {
+    0% {
+        font-size: 0;
+    }
+
+    100% {
+
+        font-size: 50px;
+    }
+}
+
+@keyframes scndAn {
+    0% {
+        font-size: 0;
+    }
+
+    100% {
+
+        font-size: 45px;
+    }
+}
+
+@keyframes thirdAn {
+    0% {
+        font-size: 0;
+    }
+
+    100% {
+
+        font-size: 47px;
+    }
+}
+
+@keyframes fourthAn {
+    0% {
+        font-size: 0;
+    }
+
+    100% {
+
+        font-size: 42px;
+    }
+}
+
+@keyframes fifthAn {
+    0% {
+        font-size: 0;
+    }
+
+    100% {
+
+        font-size: 46px;
+    }
+}

@@ -8,8 +8,6 @@
     align-items: center;
     border: none;
     outline: none;
-    transition: background-color 0.6s ease;
-    border-radius: 12px;
 }
 
 
@@ -22,7 +20,10 @@
     border-radius: 4px;
 }
 
-;
+.navbarCon:hover {
+    background-color: cadetblue;
+    opacity: 0.4;
+}
 
 .navbarConA {
     background-color: cadetblue;
@@ -31,14 +32,31 @@
 
 .navbar-icon {
     margin-left: auto;
-    transition: background-color 0.6s ease;
-}
-
-.navbar-icon:hover {
-    opacity: 80%;
 }
 
 .iconSizing {
     height: 60px;
     width: 60px;
+    z-index: 90;
+    animation: rotate 1s linear infinite;
+    animation-play-state: paused;
+}
+
+.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.staticNavbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
 }

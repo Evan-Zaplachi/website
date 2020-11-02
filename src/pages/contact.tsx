@@ -5,11 +5,15 @@ import * as faBrands from '@fortawesome/free-brands-svg-icons';
 import * as faIons from '@fortawesome/free-solid-svg-icons';
 
 import MyFooter from '../components/footer';
+import StickyNavbar from '../components/stickyNavbar';
 
 
 function Contact() {
     return(
         <article>
+            <header style={{ position: 'fixed', top: '0', left: '0', width: '100%' }} >
+               <StickyNavbar /> 
+            </header>
             <section>
                 <div className="scnd-header">
                     <h3>Contact Info:</h3>
@@ -49,7 +53,9 @@ function Contact() {
                     </table>
                 </div>
             </section>
-            <MyFooter text="Email Is The Best Way To Contact Me" />
+            <footer style={{ marginTop: '500px' }}>
+                <MyFooter text="Email Is The Best Way To Contact Me" />
+            </footer>
         </article>
     )
 }
