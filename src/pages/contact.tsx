@@ -18,7 +18,7 @@ function Contact() {
                 <div className="scnd-header">
                     <h3>Contact Info:</h3>
                 </div>
-                <div>
+                <div style={{left: '10%', position: 'fixed'}}>
                     <table>
                         <tr>
                             <td>

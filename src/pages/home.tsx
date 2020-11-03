@@ -8,6 +8,11 @@ import Name from '../components/name';
 
 
 function Home() {
+    const clickHandler = () => {
+        document.body.scrollTop = 750;
+        document.documentElement.scrollTop = 750;
+    }
+
     return(
         <article>
             <section>
@@ -16,7 +21,7 @@ function Home() {
                 </header>
                 <StickyNavbar />
                 <body>
-                    <div className="scnd-header" style={{marginTop: '5vh'}}>
+                    <div className="scnd-header" style={{marginTop: '5vh'}} onClick={clickHandler} id="btnScroll">
                         <FontAwesomeIcon icon={faIcons.faChevronDown} />
                     </div>
                     <div className="row">

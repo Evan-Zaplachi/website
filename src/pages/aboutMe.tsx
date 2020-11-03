@@ -4,14 +4,19 @@ import MyFooter from '../components/footer';
 import StickyNavbar from '../components/stickyNavbar';
 
 function AboutMe() {
+    const clickHandler = () => {
+        document.body.scrollTop = 50;
+        document.documentElement.scrollTop = 50;
+    }
+
     return(
         <article>
-            <header className="navbarStatic">
+            <header style={{ position: 'fixed', top: '0', left: '0', width: '100%' }}>
                <StickyNavbar /> 
             </header>
             <section>
                 <header>
-                    <div className="scnd-header">
+                    <div className="scnd-header" onClick={clickHandler}>
                         <h3>Some more about me:</h3>
                     </div>
                 </header>
